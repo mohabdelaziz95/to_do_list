@@ -1,0 +1,426 @@
+/* General styles */
+
+@font-face {
+    font-family: 'Droid Arabic Kufi', sans-serif;
+    src: url('../fonts/DroidKufi-Regular.ttf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#main {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+}
+
+#header{
+    height: 60px;
+    width: 100%;
+    background-color: #C82647;
+}
+
+#header .logo {
+    float: left;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+#header .logo a {
+    display: inline;
+    color: #eee;
+    font-size: 25px;
+    font-family: 'Droid Arabic Kufi', sans-serif;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+#header .logo a img {
+    width: 50px;
+    height: 50px;
+    margin-top: -5px;
+}
+
+.error-region {
+    position: relative;
+    margin: -10px 0 -12px 0;
+    border: none;
+    border-radius: 5px;
+    color: #eeeeee;
+    background-color: #ff0000;
+}
+
+#break-line {
+    margin: 50px 0 50px 0;
+}
+
+#navbar {
+    margin: 0 0 0 50px;
+}
+
+#profile, #update-profile {
+    width: 800px;
+    height: 400px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;  bottom: 0;
+    right: 0;  left: 0;
+    margin: auto;
+}
+
+#update-profile .profile-image {
+    width: 100px;
+    height: 100px;
+}
+
+#update-profile {
+    display: none;
+}
+
+#profile {
+    display: block;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+}
+
+#profile .profile-image, #profile .profile-details, #update-profile .profile-image, #update-profile .profile-details  {
+    padding-top: 20px;
+    display: table;
+    margin: 0 auto;
+}
+
+#profile .profile-image img, #update-profile .profile-image img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+#profile .profile-details h2, #update-profile .profile-details h2 {
+    color: #282830;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#profile .profile-details h3, #update-profile .profile-details h3 {
+    color: #282830;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#profile .profile-details #edit {
+    color: #282830;
+    font-size: 15px;
+    margin: 20px 0 0 90px;
+    position: absolute;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+}
+
+#update-profile .profile-details button{
+    color: #282830;
+    font-size: 15px;
+    margin: 25px 50px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#profile .profile-details a:hover {
+    color: #8A2D3C;
+}
+
+#todo {
+    width: 800px;
+    height: 400px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;  bottom: 0;
+    right: 0;  left: 0;
+    margin: auto;
+    display: none;
+}
+
+#todo-body .list-group {
+    height: 300px;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+#todo #todo-head, #todo #todo-body {
+    width: 100%;
+}
+
+#todo #todo-head h3 {
+    font-size: 15px;
+    color: #8A2D3C;
+    border-bottom: 1px dashed #ccc;
+    padding: 0 0 5px 10px;
+    font-weight:normal;
+}
+
+#todo #todo-head #Add {
+    margin: 10px 15px 0 0;
+    float:right;
+    color: #000;
+}
+
+#todo-text {
+    width: 700px;
+    float: left;
+}
+
+#todo-body {
+    float: left;
+}
+
+#lastInsertedId {
+    display: none;
+}
+
+#todo #todo-body .list-group {
+    padding: 30px 15px 0 15px;
+}
+
+#todo #todo-body .list-group li:hover {
+    background-color: #eee;
+}
+
+#todo #todo-body li .options {
+    float: right;
+}
+
+#todo #todo-body li .options a i {
+    margin: 0 5px 0 0;
+}
+
+.mark-as, .delete {
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 2px;
+    margin-right: 5px;
+}
+
+.mark-as {
+    padding: 2px 8px;
+}
+
+.mark-as:hover {
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.delete:hover {
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.error-region p {
+    width: 700px;
+    height: 30px;
+    font: 16px Arial,"Helvatica Neue", Helvatica,sans-serif;
+    padding: 6px 0 0 10px;
+}
+
+.success {
+    position: relative;
+    margin: -10px 0 -12px 0;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #0AC986;
+}
+
+.success p {
+    width: 700px;
+    height: 30px;
+    font: 16px Arial,"Helvatica Neue", Helvatica,sans-serif;
+    padding: 6px 0 0 10px;
+}
+
+.login-form {
+    width: 350px;
+    padding: 40px 30px;
+    background: #eee;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding: 5px 7px 5px 15px;
+    margin-top: 10px;
+    background: #fff;
+    color: #666;
+    border: 2px solid #ddd;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.form-control:focus, .form-control:focus + .fa {
+    border-color: #323232;
+    color: #323232;
+}
+
+.fa-lock:focus {
+    color: #CF000F;
+}
+
+.form-group .fa {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    color: #999;
+}
+
+#notifications {
+    margin: 0 0 0 -40px;
+}
+
+#notifications li {
+    font-size: 13.5px;
+    font-weight: normal;
+    list-style-type: none;
+}
+
+#notifications #errorMessage {
+    color: #A94442;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+#notifications #successMessage {
+    color: #3D8EB9;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.alert {
+    display: none;
+}
+
+.fa {
+    margin: -23px 10px 0 0;
+    float: right;
+    color: #323232;
+}
+
+.message, .link {
+    margin-top: 10px;
+}
+
+.log-btn {
+    background: #0AC986;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.log-btn:hover {
+    color: #C82647;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.18);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.18);
+}
+
+
+#signUp {
+    margin: 20px 0 0 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #4f4f4f;
+    float: right;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #10CE88;
+}
+
+.link2 {
+    text-decoration: none;
+    color: #4f4f4f;
+    float: left;
+    font-size: 13px;
+}
+
+.link2:hover {
+    text-decoration: underline;
+    color: #10CE88;
+}
+
+.link3 {
+    text-decoration: none;
+    color: #4f4f4f;
+    float: right;
+    font-size: 13px;
+}
+
+
+.link3:hover {
+    text-decoration: underline;
+    color: #10CE88;
+}
+
+.register {
+    display: none;
+}
+
+.message {
+    font-size: 15px;
+    color: #4f4f4f;
+}
+
+#message-register {
+    margin-top: 10px;
+}
+
+.remember {
+    margin-top: 5px;
+}
