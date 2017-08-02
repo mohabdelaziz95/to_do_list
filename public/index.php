@@ -39,10 +39,10 @@ require_once 'includes/header.php';
     </form>
 
     <form action="login.php" method="POST" class="login" id="login-form">
-        <input type="text" name="Username" placeholder="Username" class="form-control" value="" autocomplete="off" required>
-        <i class="fa fa-user"></i>
         <input type="password" name="Password" class="form-control" placeholder="Password" autocomplete="off" required>
         <i class="fa fa-lock"></i>
+        <input type="text" name="Username" placeholder="Username" class="form-control" value="" autocomplete="off" required>
+        <i class="fa fa-user"></i>
         <input type="hidden" name="token" value="<?php echo $token; ?>">
         <span class="alert">Invalid Credentials</span>
         <a class="link" href="#">Lost your password?</a>
